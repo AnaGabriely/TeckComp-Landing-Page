@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+    font-family: 'Wix Madefor Display', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    color: #8fff77;
+}
+.colorText{
+    color:  #8fff77;
+}
+#logo{
+    width: 120px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 4%;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li a{
+    color: #fff;
+    padding-left: 50px;
+    text-transform: capitalize;
+}
+#btn-1{
+    color: #fff;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 80px; 
+    height: 30px;
+    border-radius: 5px;
+    
+}
+#btn-1:hover{
+    color: #8fff77;
+}
+#btn-2{
+    color: #fff;
+    border: none;
+    font-weight: bolder;
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #666666;
+    transition: ease-in 0.2s;
+}
+#btn-2:hover{
+    background-color: #8fff77;
+}
+
+/** MAIN  **/
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 4%;
+}
+main h1{
+    color: #fff;
+    font-size: 4em;
+    max-width: 600px;
+}
+main p{
+    color: #fff;
+    margin-top: 30px;
+    line-height: 26px;
+    max-width: 400px;
+}
+#btn-3{
+    background-color: #8fff77;
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#btn-3:hover{
+    background-color: #fff;
+}
+#illustration{
+    width: 500px;
+    height: 400px;
+   
+}
+.mobile-menu, .mobile-menu-icon{
+    display: none;
+}
+@media (max-width: 948px){
+    #illustration{
+        width: 400px;
+        height: 300px;}
+       
+    main{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .boxText{
+        text-align: center;
+    }
+    main h1{
+        max-width: none;
+    }
+    main p{
+        max-width: none}
+    .boxText h1{
+        margin-top: 50px;
+    }
+    .nav{
+        padding: 1.5rem 4rem;
+
+    }
+    .links, .buttons{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    padding-bottom: 1rem; 
+    background-color: #8fff77;  }
+
+    .mobile-menu li a {
+        display: block;
+        padding: 1.2rem;
+    }
+    .mobile-menu  button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+}
